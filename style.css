@@ -52,11 +52,11 @@ button:hover {
     background-color: rgba(248, 178, 93, 0.8);
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background: linear-gradient(180deg, #000 1%, #2b2a2a 99%);
 }
 
@@ -124,3 +124,89 @@ input {
 #slide3:checked ~ .s1 {
     margin-left: -66%;
 }
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    position: relative;
+    top: 750px;
+}
+
+.row {
+    margin: 0 -5px;
+    border-radius: 10px;
+    top: 30px;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(248, 178, 93, 0.8);
+   
+}
+ 
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+.card img {
+    width: 100%;
+}
+
+div.FormularioEncomenda {
+    background-color: #ccc;
+    margin: 20px 0;
+    position: relative;
+  }
+
+div.FormularioEncomenda.inlined {
+    width: 49%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+}
+
+label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 1.25em;
+}
+  
+input, select, textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    width: 100%;
+    padding: 10px;
+}
+  
+div.FormularioEncomenda.inlined input {
+    width: 95%;
+    display: inline-block;
+}
+  
+textarea {
+    height: 250px;
+}
+  
+hr {
+    border: 1px dotted #ccc;
+}
+  

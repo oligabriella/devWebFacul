@@ -26,15 +26,15 @@
     <input type="radio" name="slide" id="slide3">
 
     <div class="slide s1">
-      <img src="./images/doce.jpg" alt="Doces variados">
+      <img src="./images/doce.png" alt="Doces variados">
     </div>
 
     <div class="slide">
-      <img src="./images/doce1.jpg" alt="Sobremesas de chocolate e morango">
+      <img src="./images/doce1.png" alt="Sobremesas de chocolate e morango">
     </div>
 
     <div class="slide">
-      <img src="./images/doce2.jpg" alt="Torta de chocolate">
+      <img src="./images/doce2.png" alt="Torta de chocolate">
     </div>
   </div>
   <div class="navigation">
@@ -45,31 +45,70 @@
 </div>
 
 <div class="row">
-  <div class="col-sm-2">
-    <div class="card" style="width: 14rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="column">
+    <div class="card">
+    <img class="card-img-top" src="./images/doce4.jpg" alt="Card image cap">
     <div class="card-body">
       <p class="card-text">Descrição do produto</p>
     </div>
   </div>
   </div>
-  <div class="col-sm-2"></div>
-  <div class="card" style="width: 14rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Descrição do produto</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-2">
-  <div class="card" style="width: 14rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="column">
+  <div class="card">
+    <img class="card-img-top" src="./images/doce4.jpg" alt="Card image cap">
     <div class="card-body">
       <p class="card-text">Descrição do produto</p>
       </div>
     </div>
+  </div>
+  <div class="column">
+  <div class="card">
+    <img class="card-img-top" src="./images/doce4.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Descrição do produto</p>
+      </div>
+  </div>
+ 
+
+ <form method="post">
+  <div class="FormularioEncomenda">
+    <label for="nome">Seu nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Insira seu nome aqui" pattern="[A-Z\sa-z]{3,20}" required />
+  </div>
+  <div class="FormularioEncomenda">
+    <label for="email">Seu email</label>
+    <input type="text" id="email" name="email" placeholder="seu_email@email.com" required />
+  </div>
+  <div class="FormularioEncomenda">
+    <label for="tel">Telefone</label>
+    <input type="text" id="tel" name="tel" placeholder="(21)91234-5678" pattern="\(\d{2}\)\d{5}-\d{4}" required />
+  </div>
+  <hr>
+  <div class="FormularioEncomenda inlined">
+    <label for="data-encomenda">Data da encomenda</label>
+    <input type="date" id="data-encomenda" name="encomenda" required />
+  </div>
+  <div class="FormularioEncomenda">
+    <label for="escolha-produto">Selecione o produto desejado</label>
+    <select id="escolha-produto" name="produto_desejado" required>
+        <option value="">Escolha o produto desejado da lista</option>
+        <option value="Produto1">Produto 1</option>
+        <option value="Produto2">Produto 2</option>
+        <option value="Produto3">Produto 3</option>
+    </select>
+  </div>
+  <hr>
+  <div class="FormularioEncomenda">
+    <label for="message"> Algo mais?</label>
+    <textarea id="message" name="cliente_mensagem" placeholder="Informe mais detalhes sobre o pedido, se necessário." required></textarea>
+  </div>
+  <button type="submit">Confirmar pedido</button>
+
 </div>
 </div>
+</form>
+</div>
+
       
 </body>
 </html>
